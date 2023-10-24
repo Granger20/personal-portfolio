@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+</head>
+<body>
+
+    <div class="header-1">
+        <div class="head">
+
+            <header>
+                <div class="logo">
+                    <div class="logo-text">Mohammad Ahmad</div>
+                </div>
+                <nav>
+                    <div class="New">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container"></div>
+            <div class="hero-pic">
+
+                <img src="images/Mohammad Ahamd 1.png" alt="profile pic">
+            </div>
+
+            <div class="home-content">
+                <h5>Hello I,m a <span class="input">Frontend Developer</span></h5>
+                <h1>Mohammad Ahmad</h1>
+                <p>I'm a learning web Devlepment.
+                    I am in B.tech 3rd year,learning Java programing language and many more....
+                </p>
+                
+                <div class="home-sci">
+                    <a href="#"><i class='fa fa-facebook'></i></a>
+                    <a href="#"><i class='fa fa-linkedin'></i></a>
+                    <a href="#"><i class='fa fa-instagram'></i></a>
+                    <a href="#"><i class='fa fa-tiktok'></i></a>
+
+
+                    <div class="btn-group">
+                        <a href="#" class="btn-box">Download cv</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>  
+ <script>
+    var New = document.querySelector(".New");
+    var nav = document.querySelector(".nav");
+    var links = document.querySelectorAll(".nav li");
+
+    New.addEventListener("click", function () {
+        this.classList.add("click");
+        nav.classList.add("open");
+    });
+
+    var typed = new Typed(".input", {
+        strings: ["Frontend Developer", "Programmer", "Web Developer"], 
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1000,
+        loop: true,
+    });
+</script>
+  
+</body>
+
+</html>
